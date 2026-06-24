@@ -1,5 +1,5 @@
-<!DOCTYPE html> 
-<html lang="fr"> 
+<!DOCTYPE html>
+<html lang="fr">
 
 <head>
 
@@ -368,6 +368,11 @@ fetch("data.csv")
                         <b>Email :</b>
                         <a href="mailto:${row["Email"]}">
                             ${row["Email"] || ""}
+                        </a><br>
+                        <a href="https://www.google.com/maps/dir/?api=1&destination=${latF},${lngF}"
+                           target="_blank"
+                           style="display:inline-block; margin-top:8px; background:#4285F4; color:white; padding:5px 12px; border-radius:4px; text-decoration:none; font-size:12px; font-weight:600;">
+                            🧭 Itinéraire
                         </a>
                     </div>
                 `;
